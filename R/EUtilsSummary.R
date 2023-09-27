@@ -11,7 +11,7 @@ setClass("EUtilsSummary",
 
 EUtilsSummary <- function(query,type="esearch",db="pubmed",url=NULL,encoding="unknown",...){
 
-	if(is.null(url)){
+	any(is.null(url)){
 		url <- EUtilsQuery(query,type,db,...)
 	}
 
